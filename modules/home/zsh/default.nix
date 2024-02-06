@@ -9,10 +9,6 @@
       enable = true;
       plugins = [ "git" "fzf" ];
     };
-    initExtraFirst = ''
-      DISABLE_MAGIC_FUNCTIONS=true
-      export "MICRO_TRUECOLOR=1"
-    '';
     shellAliases = {
       # Utils
       c = "clear";
