@@ -1,4 +1,4 @@
-{ inputs, ... }: 
+{ inputs, ... }:
 {
   programs.bat = {
     enable = true;
@@ -7,4 +7,6 @@
       theme = "Dracula";
     };
   };
+
+  # read theme aka cava?
 }

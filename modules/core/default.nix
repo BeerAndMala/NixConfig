@@ -9,19 +9,19 @@ let
 in
 {
   imports = [
-     ./bootloader.nix
-     ./hardware.nix
-     ./zfs.nix
-     ./xserver.nix
-     ./network.nix
-     ./pipewire.nix
-     ./security.nix
-     ./services.nix
-     ./steam.nix
-     ./program.nix
-     ./system.nix
-     ./user.nix
-     ./wayland.nix
-     ./virtualization.nix
+    ./bootloader.nix
+    ./hardware.nix
+    ./zfs.nix
+    ./xserver.nix
+    ./network.nix
+    ./pipewire.nix
+    ./security.nix
+    ./services.nix
+    ./steam.nix
+    ./program.nix
+    ./system.nix
+    ./user.nix
+    ./wayland.nix
+    ./virtualization.nix
   ];
 }

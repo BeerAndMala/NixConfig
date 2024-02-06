@@ -3,6 +3,8 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+
     nur.url = "github:nix-community/NUR";
 
     hypr-contrib.url = "github:hyprwm/contrib";
@@ -36,7 +38,7 @@
     };
   };
 
-  outputs = { nixpkgs, self, ...} @ inputs:
+  outputs = { nixpkgs, nixos-hardware, self, ...} @ inputs:
   let
     inherit (nixpkgs.lib) nixosSystem;
     inherit (nixpkgs) lib;
@@ -44,7 +46,7 @@
   {
     nixosConfigurations = {
       lemurpro = nixosSystem {
-        specialArgs = { inherit inputs nixpkgs; };
+        specialArgs = { inherit inputs nixpkgs nixos-hardware; };
         modules = [
           ./hosts/lemurpro
           ./modules/core

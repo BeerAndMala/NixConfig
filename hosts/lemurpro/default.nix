@@ -1,4 +1,4 @@
-{ inputs, nixpkgs, ...}:
+{ inputs, nixpkgs, nixos-hardware, ...}:
 let
   system = "x86_64-linux";
   pkgs = import nixpkgs {
@@ -8,6 +8,9 @@ let
   lib = nixpkgs.lib;
 in {
   imports = [
+    nixos-hardware.nixosModules.common-cpu-intel
+    nixos-hardware.nixosModules.common-pc-laptop
+    nixos-hardware.nixosModules.system76
     ../../modules/core/default.nix
   ];
 

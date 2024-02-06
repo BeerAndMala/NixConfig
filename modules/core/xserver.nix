@@ -3,6 +3,7 @@
   services.xserver = {
     enable = true;
     xkb.layout = "us";
+    xkb.options = "caps:escape";
     libinput = {
       enable = true;
       # mouse = {
