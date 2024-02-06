@@ -5,7 +5,6 @@
       $mainMod = SUPER
 
       monitor=,preferred,auto,auto
-      monitor=,1920x1200,auto,auto
 
       # autostart
       exec-once = systemctl --user import-environment &
@@ -14,7 +13,6 @@
       exec-once = nm-applet &
       exec-once = wl-paste --primary --watch wl-copy --primary --clear
       exec-once = swaybg -m fill -i $(find ~/Pictures/wallpapers/ -maxdepth 1 -type f) &
-      exec-once = sleep 1 && swaylock
       exec-once = hyprctl setcursor Nordzy-cursors 22 &
       exec-once = waybar &
       exec-once = mako &
@@ -135,7 +133,7 @@
       bind = $mainMod, Return, exec, kitty
       bind = ALT, Return, exec, kitty --title float_kitty
       bind = $mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'
-      bind = $mainMod, B, exec, floorp
+      bind = $mainMod, B, exec, firefox
       bind = $mainMod, Q, killactive,
       bind = $mainMod, F, fullscreen, 0
       bind = $mainMod SHIFT, F, fullscreen, 1
@@ -145,7 +143,7 @@
       bind = $mainMod SHIFT, Escape, exec, shutdown-script
       bind = $mainMod, P, pseudo,
       bind = $mainMod, J, togglesplit,
-      bind = $mainMod, E, exec, nemo
+      bind = $mainMod, E, exec, thunar
       bind = $mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped
       bind = $mainMod, C ,exec, hyprpicker -a
       bind = $mainMod, G,exec, $HOME/.local/bin/toggle_layout
@@ -217,37 +215,37 @@
       bindm = $mainMod, mouse:273, resizewindow
 
       # windowrule
-      windowrule = float,audacious
-      windowrule = workspace 8 silent, audacious
+      #windowrule = float,audacious
+      #windowrule = workspace 8 silent, audacious
       windowrule = pin,wofi
       windowrule = float,wofi
       windowrule = noborder,wofi
-      windowrule = tile, neovide
-      windowrule = idleinhibit focus,mpv
-      windowrule = float,udiskie
-      windowrule = float,title:^(Transmission)$
-      windowrule = float,title:^(Volume Control)$
-      windowrule = float,title:^(Firefox — Sharing Indicator)$
-      windowrule = move 0 0,title:^(Firefox — Sharing Indicator)$
-      windowrule = size 700 450,title:^(Volume Control)$
-      windowrule = move 40 55%,title:^(Volume Control)$
-      windowrulev2 = float, title:^(Picture-in-Picture)$
-      windowrulev2 = opacity 1.0 override 1.0 override, title:^(Picture-in-Picture)$
-      # windowrulev2 = opacity 1.0 override 1.0 override, title:^(.*YouTube.*)$
-      windowrulev2 = pin, title:^(Picture-in-Picture)$
-      windowrule = float,imv
-      windowrule = center,imv
-      windowrule = size 1200 725,imv
-      windowrulev2 = opacity 1.0 override 1.0 override, title:^(.*imv.*)$
-      windowrule = float,mpv
-      windowrule = center,mpv
-      windowrulev2 = opacity 1.0 override 1.0 override, title:^(.*mpv.*)$
-      windowrule = tile,Aseprite
-      windowrulev2 = opacity 1.0 override 1.0 override, class:(Aseprite)
-      windowrulev2 = opacity 1.0 override 1.0 override, class:(Unity)
-      windowrule = size 1200 725,mpv
-      windowrulev2 = idleinhibit focus, class:^(mpv)$
-      windowrulev2 = idleinhibit fullscreen, class:^(firefox)$
+      #windowrule = tile, neovide
+      #windowrule = idleinhibit focus,mpv
+      #windowrule = float,udiskie
+      #windowrule = float,title:^(Transmission)$
+      #windowrule = float,title:^(Volume Control)$
+      #windowrule = float,title:^(Firefox — Sharing Indicator)$
+      #windowrule = move 0 0,title:^(Firefox — Sharing Indicator)$
+      #windowrule = size 700 450,title:^(Volume Control)$
+      #windowrule = move 40 55%,title:^(Volume Control)$
+      #windowrulev2 = float, title:^(Picture-in-Picture)$
+      #windowrulev2 = opacity 1.0 override 1.0 override, title:^(Picture-in-Picture)$
+      #windowrulev2 = opacity 1.0 override 1.0 override, title:^(.*YouTube.*)$
+      #windowrulev2 = pin, title:^(Picture-in-Picture)$
+      #windowrule = float,imv
+      #windowrule = center,imv
+      #windowrule = size 1200 725,imv
+      #windowrulev2 = opacity 1.0 override 1.0 override, title:^(.*imv.*)$
+      #windowrule = float,mpv
+      #windowrule = center,mpv
+      #windowrulev2 = opacity 1.0 override 1.0 override, title:^(.*mpv.*)$
+      #windowrule = tile,Aseprite
+      #windowrulev2 = opacity 1.0 override 1.0 override, class:(Aseprite)
+      #windowrulev2 = opacity 1.0 override 1.0 override, class:(Unity)
+      #windowrule = size 1200 725,mpv
+      #windowrulev2 = idleinhibit focus, class:^(mpv)$
+      #windowrulev2 = idleinhibit fullscreen, class:^(firefox)$
 
       windowrule = float,title:^(float_kitty)$
       windowrule = center,title:^(float_kitty)$
