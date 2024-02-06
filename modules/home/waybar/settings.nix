@@ -38,26 +38,11 @@
         "network"
         "clock" 
     ];
-    clock= {
-        format = " {:%H:%M}";
-        tooltip= "true";
-        tooltip-format= "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
-        format-alt= " {:%d/%m}";
-    };
-    "wlr/workspaces"= {
-        active-only= false;
-        all-outputs= false;
-        disable-scroll= false;
-        on-scroll-up= "hyprctl dispatch workspace e-1";
-        on-scroll-down= "hyprctl dispatch workspace e+1";
-        format = "{name}";
-        on-click= "activate";
-        format-icons= {
-            urgent= "";
-            active= "";
-            default = "";
-            sort-by-number= true;
-        };
+    "custom/launcher"= {
+        format= "";
+        on-click= "pkill wofi || wofi --show drun";
+        on-click-right= "pkill wofi || wallpaper-picker"; 
+        tooltip= "false";
     };
     "custom/playerctl#backward"= {
         format= "󰙣 "; 
@@ -84,31 +69,39 @@
         on-scroll-up = "playerctl volume .05+";
         on-scroll-down = "playerctl volume .05-";
     };
-    memory= {
-        format= "󰟜 {}%";
-        format-alt= "󰟜 {used} GiB"; # 
-        interval= 2;
+    "wlr/workspaces"= {
+        active-only= false;
+        all-outputs= false;
+        disable-scroll= false;
+        on-scroll-up= "hyprctl dispatch workspace e-1";
+        on-scroll-down= "hyprctl dispatch workspace e+1";
+        format = "{name}";
+        on-click= "activate";
+        format-icons= {
+            urgent= "";
+            active= "";
+            default = "";
+            sort-by-number= true;
+        };
+    };
+    tray= {
+        icon-size= 20;
+        spacing= 8;
     };
     cpu= {
         format= "  {usage}%";
         format-alt= "  {avg_frequency} GHz";
         interval= 2;
     };
+    memory= {
+        format= "󰟜 {}%";
+        format-alt= "󰟜 {used} GiB"; # 
+        interval= 2;
+    };
     disk = {
         # path = "/";
         format = "󰋊 {percentage_used}%";
         interval= 60;
-    };
-    network = {
-        format-wifi = "  {signalStrength}%";
-        format-ethernet = "󰀂 ";
-        tooltip-format = "Connected to {essid} {ifname} via {gwaddr}";
-        format-linked = "{ifname} (No IP)";
-        format-disconnected = "󰖪 ";
-    };
-    tray= {
-        icon-size= 20;
-        spacing= 8;
     };
     pulseaudio= {
         format= "{icon} {volume}%";
@@ -119,11 +112,18 @@
         scroll-step= 5;
         on-click= "pamixer -t";
     };
-    "custom/launcher"= {
-        format= "";
-        on-click= "pkill wofi || wofi --show drun";
-        on-click-right= "pkill wofi || wallpaper-picker"; 
-        tooltip= "false";
+    network = {
+        format-wifi = "  {signalStrength}%";
+        format-ethernet = "󰀂 ";
+        tooltip-format = "Connected to {essid} {ifname} via {gwaddr}";
+        format-linked = "{ifname} (No IP)";
+        format-disconnected = "󰖪 ";
+    };
+    clock= {
+        format = " {:%H:%M}";
+        tooltip= "true";
+        tooltip-format= "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
+        format-alt= " {:%d/%m}";
     };
   };
 }

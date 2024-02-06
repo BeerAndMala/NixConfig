@@ -7,13 +7,14 @@
     file                              # Show file information
     lsof
     fzf                               # fuzzy finder
-    go
     sanoid
+    nushell
 
     nixfmt
     nix-du
     nix-tree
     nix-index
+    nix-prefetch-github
     nvd
 
     lazygit
@@ -27,7 +28,7 @@
     remmina
     xfce.thunar
     nitch                             # system fetch util
-    nix-prefetch-github
+    neofetch
     ripgrep                           # grep replacement
 
     nmap
@@ -51,6 +52,7 @@
     gnumake
     openssl
 
+    go
     rustup
     dotnet-sdk_8
 
