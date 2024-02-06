@@ -7,6 +7,8 @@
     file                              # Show file information
     lsof
     fzf                               # fuzzy finder
+    unzip
+    wget
     sanoid
     nushell
 
@@ -27,9 +29,9 @@
     libreoffice
     remmina
     xfce.thunar
-    nitch                             # system fetch util
-    neofetch
-    ripgrep                           # grep replacement
+    gnome.zenity
+    joplin-desktop
+    bitwarden
 
     nmap
     wireshark
@@ -40,12 +42,20 @@
 
     soundwireserver                   # pass audio to android phone
     spotify
-    todo                              # cli todo list
-    taskwarrior
-    joplin-desktop
+    pamixer                           # pulseaudio command line mixer
+    pavucontrol                       # pulseaudio volume controle (GUI)
+    playerctl                         # controller for media players
+    ffmpeg-full
+    mpv                               # video player
+    vlc
+    imv                               # image viewer
 
     yazi                              # terminal file manager
-    gnome.zenity
+    todo                              # cli todo list
+    taskwarrior
+    nitch                             # system fetch util
+    neofetch
+    ripgrep                           # grep replacement
 
     # C / C++
     gcc
@@ -60,21 +70,12 @@
     gparted                           # partition manager
     gptfdisk
     sqlite
-    bitwarden
-    ffmpeg-full
-    mpv                               # video player
-    vlc
-    imv                               # image viewer
+    
     libnotify
+    xdg-utils
 	  man-pages					            	  # extra man pages
     ncdu                              # disk space
-    pamixer                           # pulseaudio command line mixer
-    pavucontrol                       # pulseaudio volume controle (GUI)
-    playerctl                         # controller for media players
     qalculate-gtk                     # calculator
-    unzip
-    wget
-    xdg-utils
     inputs.alejandra.defaultPackage.${system}
   ]);
 }
