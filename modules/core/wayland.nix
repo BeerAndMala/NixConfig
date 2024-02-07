@@ -10,8 +10,7 @@
     export XDG_CURRENT_DESKTOP=Hyprland
     export HYPRLAND_LOG_WLR=1
 
-
-    ${pkgs.hyprland}/bin/Hyprland $@
+    exec ${pkgs.hyprland}/bin/Hyprland $@
   '';
 in {
   programs.hyprland.enable = true;
