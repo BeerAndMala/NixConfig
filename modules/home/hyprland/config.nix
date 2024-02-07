@@ -145,10 +145,11 @@
       bind = $mainMod, J, togglesplit,
       bind = $mainMod, E, exec, thunar
       bind = $mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped
-      bind = $mainMod, C ,exec, hyprpicker -a
-      bind = $mainMod, G,exec, $HOME/.local/bin/toggle_layout
-      bind = $mainMod, W,exec, pkill wofi || wallpaper-picker
+      bind = $mainMod, C, exec, hyprpicker -a
+      bind = $mainMod, G, exec, $HOME/.local/bin/toggle_layout
+      bind = $mainMod, W, exec, pkill wofi || wallpaper-picker
       bind = $mainMod SHIFT, W, exec, vm-start
+      bind = $mainMod SHIFT, X, exec, hyprctl dispatch exit
 
       # screenshot
       bind = $mainMod, Print, exec, grimblast --notify --cursor save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png

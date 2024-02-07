@@ -15,7 +15,7 @@
     enable = true;
     font = {
       name = "JetBrainsMono Nerd Font";
-      size = 11;
+      size = 8;
     };
     iconTheme = {
       name = "Papirus-Dark";
@@ -36,13 +36,13 @@
     cursorTheme = {
       name = "Nordzy-cursors";
       package = pkgs.nordzy-cursor-theme;
-      size = 22;
+      size = 16;
     };
   };
 
   home.pointerCursor = {
     name = "Nordzy-cursors";
     package = pkgs.nordzy-cursor-theme;
-    size = 22;
+    size = 16;
   };
 }

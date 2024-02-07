@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   programs.vscode = {
     enable = true;
     enableUpdateCheck = false;
@@ -44,7 +43,7 @@
       "window.titleBarStyle" = "custom"; # needed otherwise vscode crashes, see https://github.com/NixOS/nixpkgs/issues/246509
       "window.menuBarVisibility" = "toggle";
       "editor.fontFamily" = "'JetBrainsMono Nerd Font', 'SymbolsNerdFont', 'monospace', monospace";
-      "editor.fontSize" = 12;
+      "editor.fontSize" = 8;
       "editor.fontLigatures" = true;
       "editor.formatOnType" = true;
       "editor.minimap.enabled" = false;

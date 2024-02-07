@@ -1,7 +1,7 @@
 {...}: let
   custom = {
     font = "JetBrainsMono Nerd Font";
-    fontsize = "12";
+    fontsize = "8";
     primary_accent = "cba6f7";
     secondary_accent = "89b4fa";
     tertiary_accent = "f5f5f5";

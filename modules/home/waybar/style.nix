@@ -1,7 +1,7 @@
 {
   custom ? {
     font = "JetBrainsMono Nerd Font";
-    fontsize = "12";
+    fontsize = "8";
     primary_accent = "cba6f7";
     secondary_accent = "89b4fa";
     tertiary_accent = "cdd6f4";
@@ -17,7 +17,7 @@
         border-radius: 0px;
         font-family: ${custom.font};
         font-weight: bold;
-        font-size: 15px;
+        font-size: ${custom.fontsize}pt;
         min-height: 0;
         opacity: ${custom.opacity};
     }
@@ -59,7 +59,7 @@
         background-size: 200% 200%;
     }
 
-    #tray, #pulseaudio, #network, #cpu, #memory, #disk,
+    #tray, #pulseaudio, #network, #battery, #cpu, #memory, #disk,
     #custom-playerctl.backward, #custom-playerctl.play, #custom-playerctl.forward{
         background: #${custom.palette.tertiary_background_hex};
         font-weight: bold;
@@ -120,7 +120,7 @@
         padding: 10px 10px 15px 25px;
         margin-left: 7px;
         font-weight: bold;
-        font-size: 16px;
+        font-size: ${custom.fontsize}pt;
     }
     #custom-launcher {
         color: #${custom.secondary_accent};
@@ -128,12 +128,12 @@
         border-radius: 0px 0px 40px 0px;
         margin: 0px;
         padding: 0px 30px 0px 10px;
-        font-size: 28px;
+        font-size: ${custom.fontsize}pt;
     }
 
     #custom-playerctl.backward, #custom-playerctl.play, #custom-playerctl.forward {
         background: #${custom.palette.tertiary_background_hex};
-        font-size: 22px;
+        font-size: ${custom.fontsize}pt;
     }
     #custom-playerctl.backward:hover, #custom-playerctl.play:hover, #custom-playerctl.forward:hover{
         color: #${custom.tertiary_accent};
@@ -154,7 +154,7 @@
         padding-right: 12px;
         margin-right: 7px
     }
-    #window{
+    #window {
         background: #${custom.palette.tertiary_background_hex};
         padding-left: 15px;
         padding-right: 15px;
