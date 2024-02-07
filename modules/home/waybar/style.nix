@@ -100,6 +100,10 @@
         padding-right: 9px;
         margin-left: 7px;
     }
+    #pulseaudio-slider trough, #backlight-slider trough {
+        min-width: 10px;
+        min-height: 80px;
+    }
     #network {
         color: #${custom.tertiary_accent};
         border-radius: 0px 0 0px 0px;

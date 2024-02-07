@@ -34,6 +34,7 @@
       "memory"
       "disk"
       "pulseaudio"
+      #"pulseaudio/slider"
       "network"
       "battery"
       "clock"
@@ -104,13 +105,25 @@
       interval = 60;
     };
     pulseaudio = {
-      format = "{icon} {volume}%";
-      format-muted = "󰖁 ";
+      format = "{volume}% {icon}";
+      format-bluetooth = "{volume}% {icon}";
+      format-muted = "";
       format-icons = {
-        default = [" "];
+        headphone = "";
+        hands-free = "";
+        headset = "";
+        phone = "";
+        portable = "";
+        car = "";
+        default = ["" ""];
       };
-      scroll-step = 5;
-      on-click = "pamixer -t";
+      scroll-step = 1;
+      on-click = "pavucontrol";
+    };
+    "pulseaudio/slider" = {
+      min = 0;
+      max = 100;
+      orientation = "vertical";
     };
     network = {
       format-wifi = "  {signalStrength}%";
