@@ -1,5 +1,8 @@
-{ inputs, pkgs, ...}:
 {
+  inputs,
+  pkgs,
+  ...
+}: {
   home.packages = with pkgs; [
     swaybg
     inputs.hypr-contrib.packages.${pkgs.system}.grimblast
@@ -11,7 +14,6 @@
     wf-recorder
     glib
     wayland
-    direnv
   ];
   #systemd.user.targets.hyprland-session.Unit.Wants = [ "xdg-desktop-autostart.target" ];
   wayland.windowManager.hyprland = {

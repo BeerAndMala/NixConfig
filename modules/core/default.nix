@@ -1,13 +1,15 @@
-{ inputs, nixpkgs, ...}:
-let
+{
+  inputs,
+  nixpkgs,
+  ...
+}: let
   system = "x86_64-linux";
   pkgs = import nixpkgs {
     inherit system;
     config.allowUnfree = true;
   };
   lib = nixpkgs.lib;
-in
-{
+in {
   imports = [
     ./bootloader.nix
     ./hardware.nix
@@ -22,6 +24,7 @@ in
     ./system.nix
     ./user.nix
     ./wayland.nix
+    ./xserver.nix
     ./virtualization.nix
   ];
 }

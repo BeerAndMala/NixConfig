@@ -1,14 +1,18 @@
-{ inputs, pkgs, ... }:
 {
-  home.packages = (with pkgs; [
+  inputs,
+  pkgs,
+  ...
+}: {
+  home.packages = with pkgs; [
     helix
-    eza                               # ls replacement
-    entr                              # perform action when file change
-    file                              # Show file information
+    eza # ls replacement
+    entr # perform action when file change
+    file # Show file information
     lsof
-    fzf                               # fuzzy finder
+    fzf # fuzzy finder
     unzip
     wget
+    acpi
     sanoid
     nushell
 
@@ -40,22 +44,22 @@
     dig
     transmission-qt
 
-    soundwireserver                   # pass audio to android phone
+    soundwireserver # pass audio to android phone
     spotify
-    pamixer                           # pulseaudio command line mixer
-    pavucontrol                       # pulseaudio volume controle (GUI)
-    playerctl                         # controller for media players
+    pamixer # pulseaudio command line mixer
+    pavucontrol # pulseaudio volume controle (GUI)
+    playerctl # controller for media players
     ffmpeg-full
-    mpv                               # video player
+    mpv # video player
     vlc
-    imv                               # image viewer
+    imv # image viewer
 
-    yazi                              # terminal file manager
-    todo                              # cli todo list
+    yazi # terminal file manager
+    todo # cli todo list
     taskwarrior
-    nitch                             # system fetch util
+    nitch # system fetch util
     neofetch
-    ripgrep                           # grep replacement
+    ripgrep # grep replacement
 
     # C / C++
     gcc
@@ -66,16 +70,16 @@
     rustup
     dotnet-sdk_8
 
-    bleachbit                         # cache cleaner
-    gparted                           # partition manager
+    bleachbit # cache cleaner
+    gparted # partition manager
     gptfdisk
     sqlite
-    
+
     libnotify
     xdg-utils
-	  man-pages					            	  # extra man pages
-    ncdu                              # disk space
-    qalculate-gtk                     # calculator
+    man-pages # extra man pages
+    ncdu # disk space
+    qalculate-gtk # calculator
     inputs.alejandra.defaultPackage.${system}
-  ]);
+  ];
 }

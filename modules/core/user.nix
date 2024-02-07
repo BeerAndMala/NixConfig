@@ -1,12 +1,18 @@
-{ pkgs, inputs, ...}:
 {
-  imports = [ inputs.home-manager.nixosModules.home-manager ];
+  pkgs,
+  inputs,
+  ...
+}: {
+  imports = [inputs.home-manager.nixosModules.home-manager];
+
   home-manager = {
     useUserPackages = true;
     useGlobalPkgs = true;
-    extraSpecialArgs = { inherit inputs; };
+    extraSpecialArgs = {inherit inputs;};
     users.bam = {
-      imports = [ (import ./../home) ];
+      imports = [
+        ./../home
+      ];
       home.username = "bam";
       home.homeDirectory = "/home/bam";
       home.stateVersion = "23.11";
@@ -33,5 +39,5 @@
       ];
     };
   };
-  nix.settings.allowed-users = [ "bam" ];
+  nix.settings.allowed-users = ["bam"];
 }

@@ -38,15 +38,18 @@
     };
   };
 
-  outputs = { nixpkgs, nixos-hardware, self, ...} @ inputs:
-  let
+  outputs = {
+    nixpkgs,
+    nixos-hardware,
+    self,
+    ...
+  } @ inputs: let
     inherit (nixpkgs.lib) nixosSystem;
     inherit (nixpkgs) lib;
-  in
-  {
+  in {
     nixosConfigurations = {
       lemurpro = nixosSystem {
-        specialArgs = { inherit inputs nixpkgs nixos-hardware; };
+        specialArgs = {inherit inputs nixpkgs nixos-hardware;};
         modules = [
           ./hosts/lemurpro
           ./modules/core
