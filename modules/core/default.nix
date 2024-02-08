@@ -16,6 +16,7 @@ in {
     ./zfs.nix
     ./xserver.nix
     ./network.nix
+    ./samba.nix
     ./pipewire.nix
     ./security.nix
     ./services.nix
