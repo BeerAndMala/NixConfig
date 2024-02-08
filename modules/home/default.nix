@@ -14,6 +14,7 @@
     ./aseprite # pixel art editor
     ./audacious # music player
     ./discord # discord with catppuccin theme
+    ./obs
     ./swaylock
     ./wofi
     ./zsh
