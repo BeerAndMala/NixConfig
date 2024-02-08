@@ -21,6 +21,7 @@
   systemd.extraConfig = "DefaultTimeoutStopSec=10s";
 
   environment.systemPackages = with pkgs; [
+    lxqt.lxqt-policykit
     sddm-chili-theme
   ];
 }

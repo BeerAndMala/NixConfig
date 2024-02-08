@@ -8,6 +8,7 @@
 
       # autostart
       exec-once = systemctl --user import-environment &
+      exec-once = lxqt-policykit-agent
       exec-once = hash dbus-update-activation-environment 2>/dev/null &
       exec-once = dbus-update-activation-environment --systemd &
       exec-once = nm-applet &
