@@ -1,6 +1,10 @@
-{ pkgs, config, inputs, ... }:
 {
-  home.packages = with pkgs;[
+  pkgs,
+  config,
+  inputs,
+  ...
+}: {
+  home.packages = with pkgs; [
     gamemode
     gamescope
     winetricks

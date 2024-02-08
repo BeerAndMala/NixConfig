@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   programs.git = {
     enable = true;
 
@@ -12,5 +11,5 @@
     };
   };
 
-  home.packages = [ pkgs.gh ];
+  home.packages = [pkgs.gh];
 }
