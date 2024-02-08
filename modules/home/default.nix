@@ -13,6 +13,7 @@
     ./wezterm
     ./aseprite # pixel art editor
     ./audacious # music player
+    ./bluetooth
     ./discord # discord with catppuccin theme
     ./obs
     ./swaylock

@@ -16,6 +16,7 @@ in {
     ./zfs.nix
     ./xserver.nix
     ./network.nix
+    ./bluetooth.nix
     ./samba.nix
     ./pipewire.nix
     ./security.nix
