@@ -15,6 +15,7 @@
     acpi
     sanoid
     nushell
+    powershell
 
     nixfmt
     nix-du
