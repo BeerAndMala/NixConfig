@@ -6,6 +6,7 @@
     mutableExtensionsDir = false;
 
     extensions = with pkgs.vscode-extensions; [
+      ms-vscode-remote.remote-ssh
       eamodio.gitlens
       mhutchie.git-graph
       oderwat.indent-rainbow
