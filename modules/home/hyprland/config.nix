@@ -24,6 +24,7 @@
         numlock_by_default = true
         follow_mouse = 1
         sensitivity = 0
+        natural_scroll = false
       }
 
       misc {
@@ -140,7 +141,7 @@
       bind = $mainMod, F, fullscreen, 0
       bind = $mainMod SHIFT, F, fullscreen, 1
       bind = $mainMod, Space, togglefloating,
-      bind = $mainMod, D, exec, pkill wofi || wofi --show drun
+      bind = $mainMod, D, exec, pkill fuzzel || fuzzel
       bind = $mainMod, Escape, exec, swaylock
       bind = $mainMod SHIFT, Escape, exec, shutdown-script
       bind = $mainMod, P, pseudo,
@@ -149,7 +150,6 @@
       bind = $mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped
       bind = $mainMod, C, exec, hyprpicker -a
       bind = $mainMod, G, exec, $HOME/.local/bin/toggle_layout
-      bind = $mainMod, W, exec, pkill wofi || wallpaper-picker
       bind = $mainMod SHIFT, W, exec, vm-start
       bind = $mainMod SHIFT, X, exec, hyprctl dispatch exit
 
@@ -220,9 +220,9 @@
       # windowrule
       #windowrule = float,audacious
       #windowrule = workspace 8 silent, audacious
-      windowrule = pin,wofi
-      windowrule = float,wofi
-      windowrule = noborder,wofi
+      #windowrule = pin,wofi
+      #windowrule = float,wofi
+      #windowrule = noborder,wofi
       #windowrule = tile, neovide
       #windowrule = idleinhibit focus,mpv
       #windowrule = float,udiskie
