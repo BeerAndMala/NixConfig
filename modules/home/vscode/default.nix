@@ -18,9 +18,10 @@
       tamasfe.even-better-toml
       serayuzgur.crates
 
-      jnoortheen.nix-ide
+      kamadorueda.alejandra
+      #jnoortheen.nix-ide
       bbenoist.nix
-      brettm12345.nixfmt-vscode
+      #brettm12345.nixfmt-vscode
       arrterian.nix-env-selector
 
       thenuprojectcontributors.vscode-nushell-lang
