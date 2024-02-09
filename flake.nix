@@ -41,7 +41,6 @@
       url = "github:catppuccin/btop";
       flake = false;
     };
-
     catppuccin-gitui = {
       url = "github:catppuccin/gitui";
       flake = false;
@@ -52,6 +51,10 @@
     };
     catppuccin-bottom = {
       url = "github:catppuccin/bottom";
+      flake = false;
+    };
+    catppuccin-spotify-player= {
+      url = "github:catppuccin/spotify-player";
       flake = false;
     };
   };

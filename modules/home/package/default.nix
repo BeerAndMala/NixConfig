@@ -63,6 +63,7 @@
     nitch # system fetch util
     neofetch
     ripgrep # grep replacement
+    spotify-player
 
     # C / C++
     gcc

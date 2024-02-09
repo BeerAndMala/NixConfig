@@ -17,4 +17,9 @@
     ''
     ''
     + builtins.readFile "${inputs.catppuccin-bottom}/themes/mocha.toml";
+
+  home.file.".config/spotify-player/theme.toml".source = "${inputs.catppuccin-spotify-player}/src/theme.toml";
+  home.file.".config/spotify-player/app.toml".text = ''
+    theme = "Catppuccin-mocha"
+  '';
 }

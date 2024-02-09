@@ -117,6 +117,22 @@
         "type": "github"
       }
     },
+    "catppuccin-spotify-player": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1703188239,
+        "narHash": "sha256-IUhzVrIBMi/Dn6+HV0m9i38Msg8zzzJlR85JeEVE7EU=",
+        "owner": "catppuccin",
+        "repo": "spotify-player",
+        "rev": "002d51b02b3a2ebc0804e4839ee604dbdab4bec3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "spotify-player",
+        "type": "github"
+      }
+    },
     "catppuccin-starship": {
       "flake": false,
       "locked": {
@@ -473,6 +489,7 @@
         "catppuccin-cava": "catppuccin-cava",
         "catppuccin-gitui": "catppuccin-gitui",
         "catppuccin-helix": "catppuccin-helix",
+        "catppuccin-spotify-player": "catppuccin-spotify-player",
         "catppuccin-starship": "catppuccin-starship",
         "home-manager": "home-manager",
         "hypr-contrib": "hypr-contrib",
