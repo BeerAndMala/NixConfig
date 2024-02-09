@@ -24,5 +24,6 @@
     ./scripts # personal scripts
     ./starship
     ./package
+    ./dotfiles
   ];
 }

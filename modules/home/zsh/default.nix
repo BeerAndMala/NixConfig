@@ -54,7 +54,8 @@
       gcoe = "git config user.email";
       gcon = "git config user.name";
 
-      g = "gitui";
+      g = "gitui -t mocha.ron";
+      gitui = "gitui -t mocha.ron";
     };
   };
 
