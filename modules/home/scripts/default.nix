@@ -4,8 +4,6 @@
 
   maxfetch = pkgs.writeScriptBin "maxfetch" (builtins.readFile ./scripts/maxfetch.sh);
 
-  show-keybinds = pkgs.writeScriptBin "show-keybinds" (builtins.readFile ./scripts/keybinds.sh);
-
   vm-start = pkgs.writeScriptBin "vm-start" (builtins.readFile ./scripts/vm-start.sh);
 in {
   home.packages = with pkgs; [
@@ -13,8 +11,6 @@ in {
     toggle_opacity
 
     maxfetch
-
-    show-keybinds
 
     vm-start
   ];

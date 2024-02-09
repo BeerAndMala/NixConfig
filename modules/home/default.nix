@@ -17,7 +17,7 @@
     ./discord # discord with catppuccin theme
     ./obs
     ./swaylock
-    ./wofi
+    ./fuzzel
     ./zsh
     ./gtk
     ./mako # notification deamon

@@ -7,7 +7,6 @@
     swaybg
     inputs.hypr-contrib.packages.${pkgs.system}.grimblast
     hyprpicker
-    wofi
     grim
     slurp
     wl-clipboard

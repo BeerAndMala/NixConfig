@@ -41,8 +41,7 @@
     ];
     "custom/launcher" = {
       format = "";
-      on-click = "pkill wofi || wofi --show drun";
-      on-click-right = "pkill wofi || wallpaper-picker";
+      on-click = "pkill fuzzel || fuzzel --show drun";
       tooltip = "false";
     };
     "custom/playerctl#backward" = {
