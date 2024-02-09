@@ -68,6 +68,7 @@
     gcc
     gnumake
     openssl
+    lldb
 
     go
     rustup

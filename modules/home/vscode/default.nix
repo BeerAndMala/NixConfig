@@ -14,6 +14,7 @@
       bierner.markdown-emoji
       bierner.emojisense
 
+      vadimcn.vscode-lldb
       rust-lang.rust-analyzer
       tamasfe.even-better-toml
       serayuzgur.crates
@@ -44,7 +45,7 @@
 
       "window.titleBarStyle" = "custom"; # needed otherwise vscode crashes, see https://github.com/NixOS/nixpkgs/issues/246509
       "window.menuBarVisibility" = "toggle";
-      "editor.fontFamily" = "'JetBrainsMono Nerd Font', 'SymbolsNerdFont', 'monospace', monospace";
+      "editor.fontFamily" = "JetBrainsMono Nerd Font";
       "editor.fontSize" = 8;
       "editor.fontLigatures" = true;
       "editor.formatOnType" = true;
