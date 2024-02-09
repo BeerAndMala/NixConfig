@@ -11,7 +11,8 @@
       exec-once = lxqt-policykit-agent
       exec-once = hash dbus-update-activation-environment 2>/dev/null &
       exec-once = dbus-update-activation-environment --systemd &
-      exec-once = nm-applet &
+      exec-once = nm-applet --indicator&
+      exec-once = blueman-applet
       exec-once = wl-paste --primary --watch wl-copy --primary --clear
       exec-once = swaybg -m fill -i $(find ~/Pictures/wallpapers/ -maxdepth 1 -type f) &
       exec-once = hyprctl setcursor Nordzy-cursors 22 &
