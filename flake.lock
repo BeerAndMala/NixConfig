@@ -21,6 +21,54 @@
         "type": "github"
       }
     },
+    "catppuccin-bat": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1668065083,
+        "narHash": "sha256-6WVKQErGdaqb++oaXnY3i6/GuH2FhTgK0v4TN4Y0Wbw=",
+        "owner": "catppuccin",
+        "repo": "bat",
+        "rev": "ba4d16880d63e656acced2b7d4e034e4a93f74b1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "bat",
+        "type": "github"
+      }
+    },
+    "catppuccin-bottom": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1672359880,
+        "narHash": "sha256-VaHX2I/Gn82wJWzybpWNqU3dPi3206xItOlt0iF6VVQ=",
+        "owner": "catppuccin",
+        "repo": "bottom",
+        "rev": "c0efe9025f62f618a407999d89b04a231ba99c92",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "bottom",
+        "type": "github"
+      }
+    },
+    "catppuccin-btop": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1696688295,
+        "narHash": "sha256-jodJl4f2T9ViNqsY9fk8IV62CrpC5hy7WK3aRpu70Cs=",
+        "owner": "catppuccin",
+        "repo": "btop",
+        "rev": "c6469190f2ecf25f017d6120bf4e050e6b1d17af",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "btop",
+        "type": "github"
+      }
+    },
     "catppuccin-cava": {
       "flake": false,
       "locked": {
@@ -34,6 +82,38 @@
       "original": {
         "owner": "catppuccin",
         "repo": "cava",
+        "type": "github"
+      }
+    },
+    "catppuccin-gitui": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1699888294,
+        "narHash": "sha256-kWaHQ1+uoasT8zXxOxkur+QgZu1wLsOOrP/TL+6cfII=",
+        "owner": "catppuccin",
+        "repo": "gitui",
+        "rev": "39978362b2c88b636cacd55b65d2f05c45a47eb9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "gitui",
+        "type": "github"
+      }
+    },
+    "catppuccin-helix": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1697816303,
+        "narHash": "sha256-qEXhj/Mpm+aqThqEq5DlPJD8nsbPov9CNMgG9s4E02g=",
+        "owner": "catppuccin",
+        "repo": "helix",
+        "rev": "8313c7250fcbbb22c6680db332669073ec6b28c2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "helix",
         "type": "github"
       }
     },
@@ -387,7 +467,12 @@
     "root": {
       "inputs": {
         "alejandra": "alejandra",
+        "catppuccin-bat": "catppuccin-bat",
+        "catppuccin-bottom": "catppuccin-bottom",
+        "catppuccin-btop": "catppuccin-btop",
         "catppuccin-cava": "catppuccin-cava",
+        "catppuccin-gitui": "catppuccin-gitui",
+        "catppuccin-helix": "catppuccin-helix",
         "catppuccin-starship": "catppuccin-starship",
         "home-manager": "home-manager",
         "hypr-contrib": "hypr-contrib",

@@ -24,12 +24,34 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # Theming
     catppuccin-cava = {
       url = "github:catppuccin/cava";
       flake = false;
     };
     catppuccin-starship = {
       url = "github:catppuccin/starship";
+      flake = false;
+    };
+    catppuccin-bat = {
+      url = "github:catppuccin/bat";
+      flake = false;
+    };
+    catppuccin-btop = {
+      url = "github:catppuccin/btop";
+      flake = false;
+    };
+
+    catppuccin-gitui = {
+      url = "github:catppuccin/gitui";
+      flake = false;
+    };
+    catppuccin-helix = {
+      url = "github:catppuccin/helix";
+      flake = false;
+    };
+    catppuccin-bottom = {
+      url = "github:catppuccin/bottom";
       flake = false;
     };
   };
