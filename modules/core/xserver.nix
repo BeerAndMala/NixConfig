@@ -15,6 +15,7 @@
     xkb.options = "caps:escape";
     libinput = {
       enable = true;
+      touchpad.naturalScrolling = false;
     };
   };
   # To prevent getting stuck at shutdown
