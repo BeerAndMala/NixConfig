@@ -30,13 +30,15 @@
     tokei
     jq
     meld
+    bottom
 
+    bitwarden
     libreoffice
     remmina
     xfce.thunar
     gnome.zenity
+    gtk3
     joplin-desktop
-    bitwarden
 
     nmap
     wireshark
