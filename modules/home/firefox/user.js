@@ -148,4 +148,5 @@ user_pref("browser.urlbar.showSearchTerms.enabled", false);
 /* [SECURITY] Disable saving passwords. */
 user_pref("signon.rememberSignons", false);
 
+user_pref("extensions.pocket.enabled", false);
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
