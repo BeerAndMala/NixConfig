@@ -3,6 +3,38 @@
   pkgs,
   ...
 }: {
+  programs.ssh = {
+    enable = true;
+    matchBlocks = {
+      amdben = {
+        hostname = "10.42.42.1";
+        user = "ben";
+      };
+      benps = {
+        hostname = "10.42.42.3";
+        user = "bam";
+      };
+      win10 = {
+        hostname = "192.168.122.23";
+        user = "ben";
+      };
+      incus-dev-sg = {
+        hostname = "192.168.0.125";
+        user = "ubuntu";
+      };
+    };
+  };
+
+  home.file.".config/nixpkgs/config.nix".text = ''
+    {
+      packageOverrides = pkgs: {
+        nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {
+          inherit pkgs;
+        };
+      };
+    }
+  '';
+
   home.file.".config/gitui/mocha.ron".source = "${inputs.catppuccin-gitui}/theme/mocha.ron";
 
   home.file.".config/helix/themes/catppuccin_mocha.toml".source = "${inputs.catppuccin-helix}/themes/default/catppuccin_mocha.toml";
