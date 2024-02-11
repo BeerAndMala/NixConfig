@@ -13,6 +13,7 @@
     unzip
     wget
     acpi
+    killall
     sanoid
     nushell
     powershell
