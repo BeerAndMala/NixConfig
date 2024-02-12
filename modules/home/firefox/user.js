@@ -150,3 +150,6 @@ user_pref("signon.rememberSignons", false);
 
 user_pref("extensions.pocket.enabled", false);
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+
+/* Restore session on startup */
+user_pref("browser.startup.page", 3);
