@@ -28,6 +28,7 @@
       "dialout"
       "networkmanager"
       "nixconfig"
+      "video"
       "wheel"
       "wireshark"
     ];

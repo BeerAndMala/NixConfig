@@ -5,6 +5,7 @@
   ...
 }: {
   programs.hyprland.enable = true;
+  programs.light.enable = true;
 
   xdg.portal = {
     enable = true;
