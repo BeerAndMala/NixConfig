@@ -202,6 +202,9 @@
       bind = $mainMod ALT, up, moveactive, 0 -80
       bind = $mainMod ALT, down, moveactive, 0 80
 
+      # Consider resize submap/mode?
+      # https://wiki.hyprland.org/Configuring/Binds/ submaps
+
       # media and volume controls
       bind = ,XF86AudioRaiseVolume,exec, pamixer -i 2
       bind = ,XF86AudioLowerVolume,exec, pamixer -d 2
@@ -222,22 +225,24 @@
       # windowrule
       #windowrule = float,audacious
       #windowrule = workspace 8 silent, audacious
-      #windowrule = pin,wofi
-      #windowrule = float,wofi
-      #windowrule = noborder,wofi
       #windowrule = tile, neovide
       #windowrule = idleinhibit focus,mpv
       #windowrule = float,udiskie
       #windowrule = float,title:^(Transmission)$
-      #windowrule = float,title:^(Volume Control)$
-      #windowrule = float,title:^(Firefox — Sharing Indicator)$
-      #windowrule = move 0 0,title:^(Firefox — Sharing Indicator)$
-      #windowrule = size 700 450,title:^(Volume Control)$
-      #windowrule = move 40 55%,title:^(Volume Control)$
-      #windowrulev2 = float, title:^(Picture-in-Picture)$
-      #windowrulev2 = opacity 1.0 override 1.0 override, title:^(Picture-in-Picture)$
-      #windowrulev2 = opacity 1.0 override 1.0 override, title:^(.*YouTube.*)$
-      #windowrulev2 = pin, title:^(Picture-in-Picture)$
+
+      windowrule = float,title:^(Volume Control)$
+      windowrule = move 40 55%,title:^(Volume Control)$
+      windowrule = size 700 450,title:^(Volume Control)$
+      windowrule = float,title:^(Firefox — Sharing Indicator)$
+      windowrule = move 0 0,title:^(Firefox — Sharing Indicator)$
+
+      windowrulev2 = float, title:^(Picture-in-Picture)$
+      windowrulev2 = opacity 1.0 override 1.0 override, title:^(Picture-in-Picture)$
+      windowrulev2 = opacity 1.0 override 1.0 override, title:^(.*YouTube.*)$
+      windowrulev2 = pin, title:^(Picture-in-Picture)$
+
+      windowrule = float,class:firefox,title:(Extension: \(Tree Style Tab\) - Close tabs\?.*)
+
       #windowrule = float,imv
       #windowrule = center,imv
       #windowrule = size 1200 725,imv

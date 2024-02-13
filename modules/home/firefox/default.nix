@@ -64,6 +64,7 @@
           bitwarden
           tree-style-tab # Set theme to photon imperatively?
           i-dont-care-about-cookies
+          firefox-color
         ];
         extraConfig = builtins.readFile ./user.js;
         userChrome = ''
