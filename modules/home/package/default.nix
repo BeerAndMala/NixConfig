@@ -13,7 +13,9 @@
     unzip
     wget
     acpi
+    bc
     killall
+    imagemagick
     sanoid
     nushell
     powershell
@@ -39,6 +41,10 @@
     xfce.thunar
     gnome.zenity
     gtk3
+    gimp
+    inkscape
+    swappy
+    slack-dark
     joplin-desktop
 
     nmap
