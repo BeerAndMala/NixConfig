@@ -129,9 +129,6 @@
 
       # ----------------------------------------------------------------
 
-      # show keybinds list
-      bind = $mainMod, F1, exec, show-keybinds
-
       # keybindings
       bind = $mainMod, Return, exec, kitty
       bind = ALT, Return, exec, kitty --title float_kitty
@@ -152,6 +149,8 @@
       bind = $mainMod, G, exec, $HOME/.local/bin/toggle_layout
       bind = $mainMod SHIFT, W, exec, vm-start
       bind = $mainMod SHIFT, X, exec, hyprctl dispatch exit
+
+      bind = , switch:Lid Switch, exec, swaylock
 
       # screenshot
       bind = $mainMod, Print, exec, grimblast --notify --cursor save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png
