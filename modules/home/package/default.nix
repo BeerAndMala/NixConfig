@@ -6,6 +6,9 @@
   home.packages = with pkgs; [
     helix
     eza # ls replacement
+    yazi # file manager
+    #gobang db management
+    lnav # log file navigator
     entr # perform action when file change
     file # Show file information
     lsof
@@ -44,6 +47,7 @@
     gimp
     inkscape
     swappy
+    input-leap
     slack-dark
     joplin-desktop
 
