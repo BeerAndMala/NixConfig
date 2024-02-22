@@ -50,6 +50,7 @@ in {
 
   environment.systemPackages = with pkgs; [
     wireguard-tools
+    powertop
   ];
 
   networking = {
