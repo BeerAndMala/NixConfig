@@ -58,8 +58,8 @@
       "editor.mouseWheelZoom" = true;
 
       "git.enableCommitSigning" = true;
-      "git-graph.repository.sign.commits" = true;
-      "git-graph.repository.sign.tags" = true;
+      #"git-graph.repository.sign.commits" = true;
+      #"git-graph.repository.sign.tags" = true;
       "git-graph.repository.commits.showSignatureStatus" = true;
 
       "workbench.colorTheme" = "Catppuccin Mocha";
