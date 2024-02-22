@@ -35,6 +35,12 @@
     }
   '';
 
+  home.file.".XCompose".text = ''
+    include "%L"
+
+    <Multi_key> <s> <f> : "¯\\_(ツ)_/¯"
+  '';
+
   home.file.".config/gitui/mocha.ron".source = "${inputs.catppuccin-gitui}/theme/mocha.ron";
 
   home.file.".config/helix/themes/catppuccin_mocha.toml".source = "${inputs.catppuccin-helix}/themes/default/catppuccin_mocha.toml";
