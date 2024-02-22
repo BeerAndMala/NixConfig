@@ -214,7 +214,7 @@
       bind = ,XF86AudioPrev,exec, playerctl previous
       bind = ,XF86AudioStop,exec, playerctl stop
       bind = ,XF86MonBrightnessDown,exec,light -T 0.9
-      bind = ,XF86MonBrightnessUp,exec,-T 1.1
+      bind = ,XF86MonBrightnessUp,exec,light -T 1.1
       bind = $mainMod, mouse_down, workspace, e-1
       bind = $mainMod, mouse_up, workspace, e+1
 
@@ -241,7 +241,8 @@
       windowrulev2 = opacity 1.0 override 1.0 override, title:^(.*YouTube.*)$
       windowrulev2 = pin, title:^(Picture-in-Picture)$
 
-      windowrule = float,class:firefox,title:(Extension: \(Tree Style Tab\) - Close tabs\?.*)
+      windowrulev2 = float,class:firefox,title:.*Extension: \(Tree Style Tab\) - Close tabs\?.*
+      windowrulev2 = size 700 450,class:firefox,title:.*Extension: \(Tree Style Tab\) - Close tabs\?.*
 
       #windowrule = float,imv
       #windowrule = center,imv
