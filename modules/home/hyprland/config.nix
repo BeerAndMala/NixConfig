@@ -134,7 +134,8 @@
       bind = $mainMod, Return, exec, kitty
       bind = ALT, Return, exec, kitty --title float_kitty
       bind = $mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'
-      bind = $mainMod, B, exec, firefox
+      bind = $mainMod, B, exec, firefox --no-remote -P Private
+      bind = $mainMod, W, exec, firefox --no-remote -P CyberOwl
       bind = $mainMod, Q, killactive,
       bind = $mainMod, F, fullscreen, 0
       bind = $mainMod SHIFT, F, fullscreen, 1
@@ -146,8 +147,8 @@
       bind = $mainMod, J, togglesplit,
       bind = $mainMod, E, exec, thunar
       bind = $mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped
-      bind = $mainMod, C, exec, hyprpicker -a
-      bind = $mainMod, G, exec, $HOME/.local/bin/toggle_layout
+      # bind = $mainMod, C, exec, hyprpicker -a
+      # bind = $mainMod, G, exec, $HOME/.local/bin/toggle_layout
       bind = $mainMod SHIFT, W, exec, vm-start
       bind = $mainMod SHIFT, X, exec, hyprctl dispatch exit
 
@@ -155,7 +156,7 @@
 
       # screenshot
       bind = $mainMod, Print, exec, grimblast --notify --cursor save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png
-      bind = ,Print, exec, grimblast --notify --cursor  copy area
+      bind = ,Print, exec, grimblast --notify --cursor copy area
 
       # switch focus
       bind = $mainMod, left, movefocus, l
@@ -241,8 +242,9 @@
       windowrulev2 = opacity 1.0 override 1.0 override, title:^(.*YouTube.*)$
       windowrulev2 = pin, title:^(Picture-in-Picture)$
 
-      windowrulev2 = float,class:firefox,title:.*Extension: \(Tree Style Tab\) - Close tabs\?.*
-      windowrulev2 = size 700 450,class:firefox,title:.*Extension: \(Tree Style Tab\) - Close tabs\?.*
+      windowrulev2 = float,class:firefox,title:Extension: \(Tree Style Tab\)
+      windowrulev2 = center,class:firefox,title:Extension: \(Tree Style Tab\)
+      windowrulev2 = size 700 450,class:firefox,title:Extension: \(Tree Style Tab\)
 
       #windowrule = float,imv
       #windowrule = center,imv
