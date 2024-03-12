@@ -50,6 +50,8 @@
     input-leap
     slack-dark
     joplin-desktop
+    telegram-desktop
+    tor-browser
 
     nmap
     wireshark
