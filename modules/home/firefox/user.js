@@ -126,17 +126,17 @@ user_pref("permissions.delegation.enabled", false);
 user_pref("browser.tabs.searchclipboardfor.middleclick", false); // [DEFAULT: false NON-LINUX]
 
 /*** [SECTION 4500]: RFP (RESIST FINGERPRINTING) ***/
-user_pref("_user.js.parrot", "4500 syntax error: the parrot's popped 'is clogs");
-user_pref("privacy.resistFingerprinting", true); // [FF41+]
-user_pref("privacy.window.maxInnerWidth", 1600);
-user_pref("privacy.window.maxInnerHeight", 900);
-user_pref("privacy.resistFingerprinting.block_mozAddonManager", true); // [HIDDEN PREF FF57-108]
-user_pref("privacy.resistFingerprinting.letterboxing", true); // [HIDDEN PREF]
-user_pref("browser.display.use_system_colors", false); // [DEFAULT: false NON-WINDOWS]
-user_pref("widget.non-native-theme.enabled", true); // [DEFAULT: true]
-user_pref("browser.link.open_newwindow", 3); // [DEFAULT: 3]
-user_pref("browser.link.open_newwindow.restriction", 0);
-user_pref("webgl.disabled", true);
+//user_pref("_user.js.parrot", "4500 syntax error: the parrot's popped 'is clogs");
+//user_pref("privacy.resistFingerprinting", true); // [FF41+]
+//user_pref("privacy.window.maxInnerWidth", 1600);
+//user_pref("privacy.window.maxInnerHeight", 900);
+//user_pref("privacy.resistFingerprinting.block_mozAddonManager", true); // [HIDDEN PREF FF57-108]
+//user_pref("privacy.resistFingerprinting.letterboxing", true); // [HIDDEN PREF]
+//user_pref("browser.display.use_system_colors", false); // [DEFAULT: false NON-WINDOWS]
+//user_pref("widget.non-native-theme.enabled", true); // [DEFAULT: true]
+//user_pref("browser.link.open_newwindow", 3); // [DEFAULT: 3]
+//user_pref("browser.link.open_newwindow.restriction", 0);
+//user_pref("webgl.disabled", true);
 
 user_pref("_user.js.parrot", "9000 syntax error: the parrot's cashed in 'is chips!");
 user_pref("browser.startup.homepage_override.mstone", "ignore");
