@@ -52,6 +52,7 @@
     joplin-desktop
     telegram-desktop
     tor-browser
+    audacity
 
     nmap
     wireshark
