@@ -59,11 +59,11 @@ user_pref("network.http.speculative-parallel-limit", 0);
 user_pref("browser.places.speculativeConnect.enabled", false);
 
 /*** [SECTION 0700]: DNS / DoH / PROXY / SOCKS ***/
-user_pref("_user.js.parrot", "0700 syntax error: the parrot's given up the ghost!");
-user_pref("network.proxy.socks_remote_dns", true);
-user_pref("network.file.disable_unc_paths", true); // [HIDDEN PREF]
-user_pref("network.gio.supported-protocols", ""); // [HIDDEN PREF]
-user_pref("network.dns.skipTRR-when-parental-control-enabled", false);
+//user_pref("_user.js.parrot", "0700 syntax error: the parrot's given up the ghost!");
+//user_pref("network.proxy.socks_remote_dns", true);
+//user_pref("network.file.disable_unc_paths", true); // [HIDDEN PREF]
+//user_pref("network.gio.supported-protocols", ""); // [HIDDEN PREF]
+//user_pref("network.dns.skipTRR-when-parental-control-enabled", false);
 
 /*** [SECTION 0800]: LOCATION BAR / SEARCH BAR / SUGGESTIONS / HISTORY / FORMS ***/
 user_pref("_user.js.parrot", "0800 syntax error: the parrot's ceased to be!");
@@ -119,10 +119,10 @@ user_pref("accessibility.force_disabled", 1);
 user_pref("browser.helperApps.deleteTempFileOnExit", true);
 user_pref("browser.uitour.enabled", false);
 user_pref("devtools.debugger.remote-enabled", false); // [DEFAULT: false]
-user_pref("permissions.manager.defaultsUrl", "");
-user_pref("webchannel.allowObject.urlWhitelist", "");
+//user_pref("permissions.manager.defaultsUrl", "");
+//user_pref("webchannel.allowObject.urlWhitelist", "");
 user_pref("network.IDN_show_punycode", true);
-user_pref("permissions.delegation.enabled", false);
+//user_pref("permissions.delegation.enabled", false);
 user_pref("browser.tabs.searchclipboardfor.middleclick", false); // [DEFAULT: false NON-LINUX]
 
 /*** [SECTION 4500]: RFP (RESIST FINGERPRINTING) ***/
