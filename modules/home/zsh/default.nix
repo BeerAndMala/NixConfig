@@ -56,6 +56,11 @@
 
       g = "gitui";
       gitui = "gitui -t mocha.ron";
+
+      k8s_janus= "export KUBECONFIG=~/.kube/config_JANUS && \
+        kubectl config use-context cluster.janus.cyberowl.io && \
+        export KOPS_STATE_STORE='s3://janus-cyberowl-io-state-store' && \
+        kops export kubecfg --admin --kubeconfig ~/.kube/config_JANUS";
     };
     sessionVariables = {
       FZF_DEFAULT_OPTS = " --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
