@@ -1,7 +1,7 @@
 {
   custom ? {
     font = "JetBrainsMono Nerd Font";
-    fontsize = "8";
+    fontsize = "10";
     primary_accent = "cba6f7";
     secondary_accent = "89b4fa";
     tertiary_accent = "f5f5f5";
@@ -35,7 +35,7 @@
       "disk"
       "pulseaudio"
       #"pulseaudio/slider"
-      "network"
+      #"network"
       "battery"
       "clock"
     ];
@@ -85,7 +85,7 @@
       };
     };
     tray = {
-      icon-size = 20;
+      icon-size = 14;
       spacing = 8;
     };
     cpu = {
