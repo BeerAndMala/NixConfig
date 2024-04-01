@@ -31,6 +31,10 @@
         };
 
         palette = "catppuccin_mocha";
+
+        aws = {
+          disabled = true;
+        };
       }
       // builtins.fromTOML (builtins.readFile "${inputs.catppuccin-starship}/palettes/mocha.toml");
   };

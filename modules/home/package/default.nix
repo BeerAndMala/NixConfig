@@ -23,6 +23,12 @@
     nushell
     powershell
 
+    awscli2
+    kops
+    kubectl
+    kubernetes-helm
+    lens
+
     nixfmt
     nix-du
     nix-tree
