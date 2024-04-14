@@ -1,12 +1,16 @@
 {
   inputs,
   nixpkgs,
+  unstable,
   nixos-hardware,
   ...
 }: let
   system = "x86_64-linux";
   pkgs = import nixpkgs {
     inherit system;
+    config.allowUnfree = true;
+  };
+  unstable = import unstable {
     config.allowUnfree = true;
   };
   lib = nixpkgs.lib;

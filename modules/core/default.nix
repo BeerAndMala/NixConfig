@@ -1,6 +1,7 @@
 {
   inputs,
   nixpkgs,
+  unstable,
   ...
 }: let
   system = "x86_64-linux";

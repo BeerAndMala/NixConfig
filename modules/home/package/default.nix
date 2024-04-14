@@ -19,6 +19,7 @@
     bc
     killall
     imagemagick
+    libcamera
     sanoid
     nushell
     powershell
@@ -44,6 +45,8 @@
     meld
     bottom
 
+    inputs.unstable.legacyPackages.${pkgs.system}.niri
+    sway
     bitwarden
     libreoffice
     remmina
