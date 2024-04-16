@@ -23,6 +23,7 @@
     sanoid
     nushell
     powershell
+    tty-clock
 
     awscli2
     kops
