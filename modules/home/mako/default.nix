@@ -21,6 +21,9 @@
         text-alignment=center
         [urgency=high]
         border-color=#fab387
+
+        [mode=do-not-disturb]
+        invisible=1
       '';
     };
   };
