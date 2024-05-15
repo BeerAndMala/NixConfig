@@ -31,7 +31,7 @@
     kubernetes-helm
     lens
 
-    nixfmt
+    nixfmt-classic
     nix-du
     nix-tree
     nix-index
