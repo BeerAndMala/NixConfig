@@ -35,6 +35,9 @@
         aws = {
           disabled = true;
         };
+        gcloud = {
+          disabled = true;
+        };
       }
       // builtins.fromTOML (builtins.readFile "${inputs.catppuccin-starship}/palettes/mocha.toml");
   };
